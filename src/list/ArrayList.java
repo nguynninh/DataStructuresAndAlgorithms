@@ -12,6 +12,12 @@ public class ArrayList<E> extends AbstractList<E> {
         this.size = 0;
     }
 
+    public ArrayList(int initSize) {
+        if (initSize < 0 ) throw new IllegalArgumentException();
+        this.data = (E[]) new Object[initSize];
+        this.size = 0;
+    }
+
     @Override
     public int size() {
         return size;

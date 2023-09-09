@@ -1,10 +1,10 @@
 package list;
 
-public interface Iterable {
+public interface Iterable<E> {
     /**
      * Returns an iterator over elements of type {@code T}.
      *
      * @return an Iterator.
      */
-    Iterator iterator();
+    Iterator<E> iterator();
 }
